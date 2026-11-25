@@ -1,0 +1,127 @@
+/* =========================================
+ULTRA PREMIUM GLOBAL LOADER
+========================================= */
+
+#loader-container{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100vh;
+
+    background:
+    radial-gradient(
+        circle at top,
+        #1e293b,
+        #020617
+    );
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    z-index:999999999;
+
+    transition:all .6s ease;
+}
+
+/* HIDE */
+
+.loader-hide{
+
+    opacity:0;
+    visibility:hidden;
+}
+
+/* GLASS BOX */
+
+.loader-box{
+
+    width:260px;
+    height:260px;
+
+    border-radius:35px;
+
+    background:
+    rgba(255,255,255,0.06);
+
+    backdrop-filter:blur(25px);
+
+    border:
+    1px solid rgba(255,255,255,0.08);
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    flex-direction:column;
+
+    box-shadow:
+
+    0 20px 60px rgba(0,0,0,0.45),
+
+    inset 0 0 20px rgba(255,255,255,0.03);
+}
+
+/* RING */
+
+.loader-ring{
+
+    width:110px;
+    height:110px;
+
+    border-radius:50%;
+
+    border:8px solid
+    rgba(255,255,255,0.08);
+
+    border-top:
+    8px solid #00ffae;
+
+    animation:
+    spin 1s linear infinite;
+
+    box-shadow:
+    0 0 35px #00ffae;
+}
+
+/* TEXT */
+
+.loader-text{
+
+    margin-top:28px;
+
+    font-size:30px;
+
+    font-weight:800;
+
+    color:white;
+
+    letter-spacing:2px;
+}
+
+/* SUBTEXT */
+
+.loader-sub{
+
+    margin-top:8px;
+
+    color:#94a3b8;
+
+    font-size:15px;
+}
+
+/* ANIMATION */
+
+@keyframes spin{
+
+    100%{
+
+        transform:rotate(360deg);
+    }
+}

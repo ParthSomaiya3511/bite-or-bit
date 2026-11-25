@@ -1,0 +1,100 @@
+body{
+
+    background:#0f172a;
+
+    color:white;
+
+    height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+}
+
+.chat-container{
+
+    margin-top:40px;
+
+    background:#111827;
+
+    border-radius:25px;
+
+    padding:20px;
+
+    height:450px;
+
+    display:flex;
+
+    flex-direction:column;
+}
+
+#chat-messages{
+
+    flex:1;
+
+    overflow-y:auto;
+}
+
+.message{
+
+    padding:12px 18px;
+
+    border-radius:18px;
+
+    margin-bottom:15px;
+
+    width:max-content;
+
+    max-width:70%;
+}
+
+.user-message{
+
+    background:#00C896;
+
+    margin-left:auto;
+
+    color:white;
+}
+
+.rider-message{
+
+    background:#1f2937;
+
+    color:white;
+}
+
+.chat-input-box{
+
+    display:flex;
+
+    gap:10px;
+
+    margin-top:20px;
+}
+
+#chat-input{
+
+    flex:1;
+
+    border:none;
+
+    border-radius:14px;
+
+    padding:14px;
+}
+
+#send-btn{
+
+    background:#00C896;
+
+    border:none;
+
+    padding:14px 25px;
+
+    border-radius:14px;
+
+    color:white;
+}

@@ -1,0 +1,445 @@
+/* =========================================
+IMPORT FONT
+========================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+/* =========================================
+GLOBAL
+========================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Outfit',sans-serif;
+    background:#06131A;
+    overflow-x:hidden;
+    color:#fff;
+}
+
+/* =========================================
+AUTH SECTION
+========================================= */
+
+.auth-section{
+    min-height:100vh;
+    padding:80px 0;
+    position:relative;
+    overflow:hidden;
+    background:
+    radial-gradient(circle at top left,
+    rgba(0,255,200,0.08),
+    transparent 25%),
+
+    radial-gradient(circle at bottom right,
+    rgba(255,102,0,0.08),
+    transparent 25%),
+
+    linear-gradient(
+        135deg,
+        #06131A,
+        #0B1E28,
+        #102733
+    );
+}
+
+/* =========================================
+FOOD MAP BACKGROUND
+========================================= */
+
+.food-map{
+    position:absolute;
+    inset:0;
+    opacity:0.05;
+    background-image:
+    linear-gradient(rgba(255,255,255,.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.08) 1px, transparent 1px);
+
+    background-size:80px 80px;
+}
+
+/* =========================================
+FLOATING FOOD IMAGES
+========================================= */
+
+.food-float{
+    position:absolute;
+    border-radius:50%;
+    object-fit:cover;
+    box-shadow:0 10px 30px rgba(0,0,0,.5);
+    animation:floatFood 6s ease-in-out infinite;
+}
+
+.food1{
+    width:140px;
+    height:140px;
+    top:80px;
+    left:5%;
+}
+
+.food2{
+    width:120px;
+    height:120px;
+    bottom:120px;
+    left:10%;
+    animation-delay:2s;
+}
+
+.food3{
+    width:100px;
+    height:100px;
+    top:120px;
+    right:8%;
+    animation-delay:1s;
+}
+
+.food4{
+    width:150px;
+    height:150px;
+    bottom:60px;
+    right:5%;
+    animation-delay:3s;
+}
+
+@keyframes floatFood{
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-20px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+}
+
+/* =========================================
+MAIN CONTAINER
+========================================= */
+
+.auth-wrapper{
+    position:relative;
+    z-index:5;
+}
+
+.auth-card{
+    background:rgba(10,20,28,.92);
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:38px;
+
+    overflow:hidden;
+
+    min-height:760px;
+
+    box-shadow:
+    0 25px 80px rgba(0,0,0,.55),
+    inset 0 1px 0 rgba(255,255,255,.08);
+}
+
+/* =========================================
+LEFT SIDE
+========================================= */
+
+.auth-left{
+    padding:70px 60px;
+    position:relative;
+    overflow:hidden;
+}
+
+.logo-box{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-bottom:45px;
+}
+
+.logo-icon{
+    width:52px;
+    height:52px;
+    border-radius:16px;
+    background:linear-gradient(135deg,#00E0B8,#00B894);
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:24px;
+    font-weight:700;
+    color:#06131A;
+}
+
+.logo-text{
+    font-size:32px;
+    font-weight:800;
+}
+
+.logo-text span{
+    color:#00E0B8;
+}
+
+/* =========================================
+HEADINGS
+========================================= */
+
+.auth-title{
+    font-size:58px;
+    font-weight:800;
+    line-height:1.1;
+    margin-bottom:22px;
+}
+
+.gradient-text{
+    background:linear-gradient(
+        90deg,
+        #00E0B8,
+        #FFB347
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.auth-subtitle{
+    color:#94A3B8;
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:40px;
+}
+
+/* =========================================
+FEATURES
+========================================= */
+
+.feature-box{
+    display:flex;
+    align-items:center;
+    gap:16px;
+
+    margin-bottom:22px;
+}
+
+.feature-icon{
+    width:52px;
+    height:52px;
+    border-radius:16px;
+
+    background:rgba(255,255,255,.06);
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    color:#00E0B8;
+    font-size:20px;
+}
+
+.feature-box h6{
+    margin:0;
+    font-size:18px;
+    font-weight:700;
+}
+
+.feature-box p{
+    margin:0;
+    color:#94A3B8;
+    font-size:14px;
+}
+
+/* =========================================
+RIGHT SIDE
+========================================= */
+
+.auth-right{
+    position:relative;
+    padding:70px 50px;
+
+    background:
+    linear-gradient(
+        180deg,
+        rgba(255,255,255,.04),
+        rgba(255,255,255,.02)
+    );
+
+    border-left:1px solid rgba(255,255,255,.06);
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+/* =========================================
+FORM BOX
+========================================= */
+
+.form-box{
+    width:100%;
+    max-width:450px;
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:32px;
+
+    padding:45px;
+
+    box-shadow:
+    0 20px 50px rgba(0,0,0,.45),
+    inset 0 1px 0 rgba(255,255,255,.06);
+}
+
+.form-box h2{
+    font-size:40px;
+    font-weight:800;
+    margin-bottom:10px;
+}
+
+.form-box p{
+    color:#94A3B8;
+    margin-bottom:35px;
+}
+
+/* =========================================
+INPUT
+========================================= */
+
+.form-group{
+    margin-bottom:22px;
+}
+
+.form-label{
+    margin-bottom:10px;
+    font-weight:600;
+}
+
+.input-box{
+    position:relative;
+}
+
+.input-box i{
+    position:absolute;
+    left:18px;
+    top:50%;
+    transform:translateY(-50%);
+    color:#94A3B8;
+}
+
+.premium-input{
+    width:100%;
+    height:60px;
+
+    border:none;
+    outline:none;
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,.05);
+
+    padding:0 20px 0 55px;
+
+    color:#fff;
+
+    font-size:16px;
+
+    transition:.3s;
+}
+
+.premium-input:focus{
+    border:1px solid #00E0B8;
+    box-shadow:0 0 20px rgba(0,224,184,.2);
+}
+
+.premium-input::placeholder{
+    color:#94A3B8;
+}
+
+/* =========================================
+BUTTON
+========================================= */
+
+.auth-btn{
+    width:100%;
+    height:62px;
+
+    border:none;
+    border-radius:18px;
+
+    background:linear-gradient(
+        135deg,
+        #00E0B8,
+        #00B894
+    );
+
+    color:#06131A;
+
+    font-size:18px;
+    font-weight:700;
+
+    transition:.4s;
+}
+
+.auth-btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 15px 30px rgba(0,224,184,.3);
+}
+
+/* =========================================
+BOTTOM TEXT
+========================================= */
+
+.bottom-text{
+    margin-top:30px;
+    text-align:center;
+    color:#94A3B8;
+}
+
+.bottom-text a{
+    color:#00E0B8;
+    text-decoration:none;
+    font-weight:700;
+}
+
+/* =========================================
+MOBILE
+========================================= */
+
+@media(max-width:991px){
+
+    .auth-card{
+        border-radius:25px;
+    }
+
+    .auth-left{
+        display:none;
+    }
+
+    .auth-right{
+        padding:40px 20px;
+        border-left:none;
+    }
+
+    .form-box{
+        padding:35px 25px;
+    }
+
+    .form-box h2{
+        font-size:32px;
+    }
+
+    .food1,
+    .food2,
+    .food3,
+    .food4{
+        display:none;
+    }
+}

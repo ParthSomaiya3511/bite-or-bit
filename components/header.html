@@ -1,0 +1,160 @@
+<!-- =========================================
+PREMIUM GLASS NAVBAR
+========================================= -->
+
+<nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+
+    <div class="container">
+
+        <!-- LOGO -->
+        <a class="navbar-brand logo" href="index.html">
+
+            <span class="logo-icon">b</span>
+
+            Bite<span class="text-teal">Orbit</span>
+
+        </a>
+
+        <!-- MOBILE TOGGLER -->
+        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <!-- NAVBAR -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="restaurants.html">
+                        Restaurants
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        Offers
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link me-lg-3" href="orders.html">
+                        Track Orders
+                    </a>
+                </li>
+
+                <!-- CART -->
+
+                <li class="nav-item me-3">
+
+                    <a href="checkout.html" class="nav-link position-relative">
+
+                        <i class="fa-solid fa-cart-shopping"></i>
+
+                        <span id="cart-count"
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+
+                            0
+
+                        </span>
+
+                    </a>
+
+                </li>
+
+                <!-- USER AREA -->
+                <li class="nav-item dropdown">
+
+                    <!-- GUEST -->
+                    <div id="guest-area">
+
+                        <a href="login.html" class="btn btn-login-glow">
+
+                            Login / Register
+
+                        </a>
+
+                    </div>
+
+                    <!-- LOGGED USER -->
+                    <div id="logged-user-area" style="display:none;">
+
+                        <button class="btn btn-login-glow dropdown-toggle d-flex align-items-center gap-2" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+
+                            <div class="user-avatar">
+
+                                <i class="fa-solid fa-user"></i>
+
+                            </div>
+
+                            <span id="nav-username">
+                                User
+                            </span>
+
+                        </button>
+
+                        <ul class="dropdown-menu dropdown-menu-end shadow-lg border-0 rounded-4 p-2">
+
+                            <li>
+
+                                <a class="dropdown-item" href="profile.html">
+
+                                    <i class="fa-solid fa-user me-2"></i>
+
+                                    My Profile
+
+                                </a>
+
+                            </li>
+
+                            <li>
+
+                                <a class="dropdown-item" href="orders.html">
+
+                                    <i class="fa-solid fa-bag-shopping me-2"></i>
+
+                                    My Orders
+
+                                </a>
+
+                            </li>
+
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+
+                            <li>
+
+                                <button class="dropdown-item text-danger" onclick="logoutUser()">
+
+                                    <i class="fa-solid fa-right-from-bracket me-2"></i>
+
+                                    Logout
+
+                                </button>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>

@@ -1,0 +1,16 @@
+  #voice-btn {
+      width: 100%;
+      padding: 20px;
+      font-size: 22px;
+      background: linear-gradient(135deg, red, darkred);
+      color: white;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+  }
+
+  #status {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #333;
+  }

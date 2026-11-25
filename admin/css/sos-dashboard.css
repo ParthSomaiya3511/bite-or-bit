@@ -1,0 +1,58 @@
+body{
+
+    background:#0f172a;
+
+    color:white;
+
+    font-family:sans-serif;
+}
+
+.dashboard-header{
+
+    margin-bottom:30px;
+}
+
+.sos-card{
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #7f1d1d,
+        #991b1b
+    );
+
+    border-radius:25px;
+
+    padding:25px;
+
+    margin-bottom:20px;
+
+    box-shadow:
+
+    0 0 30px rgba(255,0,0,0.3);
+}
+
+.sos-card h2{
+
+    font-size:28px;
+
+    font-weight:bold;
+}
+
+.resolve-btn{
+
+    margin-top:20px;
+
+    padding:12px 25px;
+
+    border:none;
+
+    border-radius:15px;
+
+    background:#00c853;
+
+    color:white;
+
+    font-weight:bold;
+}
